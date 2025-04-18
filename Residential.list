@@ -1,5 +1,3 @@
-DOMAIN-SUFFIX,apple-relay.apple.com
-DOMAIN-SUFFIX,apple-relay.cloudflare.com
 DOMAIN-SUFFIX,joinhomebase.com
 DOMAIN-SUFFIX,robinhood.com
 DOMAIN-SUFFIX,bankofamerica.com
@@ -16,4 +14,3 @@ DOMAIN-SUFFIX,wf.com
 DOMAIN-SUFFIX,eum-appdynamics
 DOMAIN-SUFFIX,branch.io
 DOMAIN-SUFFIX,intuit.com
-DOMAIN-SUFFIX,labs.google
