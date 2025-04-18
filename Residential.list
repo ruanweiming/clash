@@ -14,3 +14,9 @@ DOMAIN-SUFFIX,wf.com
 DOMAIN-SUFFIX,eum-appdynamics
 DOMAIN-SUFFIX,branch.io
 DOMAIN-SUFFIX,intuit.com
+
+# Apple AI
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+# Google Veo 2
+DOMAIN-SUFFIX,labs.google
