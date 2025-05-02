@@ -20,3 +20,5 @@ DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
 # Google Veo 2
 DOMAIN-SUFFIX,labs.google
+# Temu
+DOMAIN-SUFFIX,temu.com
