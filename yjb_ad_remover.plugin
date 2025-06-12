@@ -1,18 +1,33 @@
 #!plugin
 
-[Plugin]
-name = 佣金宝去广告
-desc = 移除佣金宝 App 内的开屏、弹窗、Banner 等多种广告。首次使用前请确保已开启 MitM 并信任 Loon 证书。
-author = ruanweiming
-# 记得把这里换成你自己插件的 Raw URL
-plugin-url = https://raw.githubusercontent.com/ruanweiming/clash/main/yjb_ad_remover.plugin
-version = 1.1
+# ---------------------------------------------------
+# 元数据 (Metadata) - 让插件更专业、信息更丰富
+# ---------------------------------------------------
+#!name = 佣金宝去广告
+#!desc = 移除佣金宝 App 内的开屏、弹窗、Banner 等多种广告。首次使用前请确保已开启 MitM 并信任 Loon 证书。
+#!author = ruanweiming
+#!homepage = https://github.com/ruanweiming/clash
+#!icon = https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Gold_Card.png
+#!tag = 去广告, 金融, 佣金宝
+#!system_version = 15.0
+#!loon_version = 3.0.0(733)
 
+# ---------------------------------------------------
+# 参数配置 (Argument) - 让插件具备可交互性 (可选)
+# ---------------------------------------------------
+# 为了演示，我们添加一个开关参数，可以方便地在UI上临时禁用脚本，而无需关闭整个插件
+[Argument]
+enable_script = switch,true,tag=启用脚本修改,desc=关闭此开关可临时禁用广告移除脚本，方便排查问题。
+
+# ---------------------------------------------------
+# MitM 主机名
+# ---------------------------------------------------
 [MITM]
-# 添加新的域名
 hostname = comarket.yongjinbao.com.cn, webapps.yongjinbao.com.cn
 
+# ---------------------------------------------------
+# 脚本规则
+# ---------------------------------------------------
 [Script]
-# 修改脚本规则，让它匹配两个 URL
-# 使用正则表达式的 | (或) 符号
-http-response ^https:\/\/(comarket|webapps)\.yongjinbao\.com\.cn\/(yjbapi\/advertisement|yjbwebservice\/core) requires-body=1, script-path=https://raw.githubusercontent.com/ruanweiming/clash/main/yjb_ad_remover.js, tag=佣金宝去广告
+# 核心脚本规则，应用了 enable 参数
+http-response ^https:\/\/(comarket|webapps)\.yongjinbao\.com\.cn\/(yjbapi\/advertisement|yjbwebservice\/core) script-path=https://raw.githubusercontent.com/ruanweiming/clash/main/yjb_ad_remover.js, requires-body=true, tag=佣金宝去广告, enable={enable_script}
