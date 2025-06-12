@@ -1,24 +1,68 @@
-DOMAIN-SUFFIX,joinhomebase.com
+############## 📱 金融服务类（银行/支付/投资）增强版 ##############
+
+# Robinhood - 股票交易平台
 DOMAIN-SUFFIX,robinhood.com
+DOMAIN-KEYWORD,robinhood
+
+# Bank of America
 DOMAIN-SUFFIX,bankofamerica.com
 DOMAIN-SUFFIX,bac-assets.com
-DOMAIN-SUFFIX,chasecdn.com
-DOMAIN-SUFFIX,zimperium.com
-DOMAIN-SUFFIX,chase.com
-DOMAIN-SUFFIX,venmo.com
-DOMAIN-SUFFIX,discovercard.com
-DOMAIN-SUFFIX,discover.com
-DOMAIN-SUFFIX,wellsfargomedia.com
-DOMAIN-SUFFIX,wellsfargo.com
-DOMAIN-SUFFIX,wf.com
-DOMAIN-SUFFIX,eum-appdynamics
-DOMAIN-SUFFIX,branch.io
-DOMAIN-SUFFIX,intuit.com
+DOMAIN-KEYWORD,bankofamerica
+DOMAIN-KEYWORD,bac
 
-# Apple AI
+# Chase 银行
+DOMAIN-SUFFIX,chase.com
+DOMAIN-SUFFIX,chasecdn.com
+DOMAIN-KEYWORD,chase
+
+# Wells Fargo 银行
+DOMAIN-SUFFIX,wellsfargo.com
+DOMAIN-SUFFIX,wellsfargomedia.com
+DOMAIN-SUFFIX,wf.com
+DOMAIN-KEYWORD,wellsfargo
+DOMAIN-KEYWORD,wf
+
+# Discover 银行和信用卡
+DOMAIN-SUFFIX,discover.com
+DOMAIN-SUFFIX,discovercard.com
+DOMAIN-KEYWORD,discover
+
+# Venmo - 移动支付（PayPal 子公司）
+DOMAIN-SUFFIX,venmo.com
+DOMAIN-KEYWORD,venmo
+
+# Intuit - TurboTax / QuickBooks
+DOMAIN-SUFFIX,intuit.com
+DOMAIN-KEYWORD,intuit
+
+############## 💼 工作 / 管理工具 ##############
+
+# Homebase - 员工排班管理
+DOMAIN-SUFFIX,joinhomebase.com
+
+############## 🔐 安全与监控 ##############
+
+# Zimperium - 移动端威胁防护
+DOMAIN-SUFFIX,zimperium.com
+
+# AppDynamics - Cisco 旗下监控工具
+DOMAIN-SUFFIX,eum-appdynamics
+
+############## 🔗 营销与链接服务 ##############
+
+# Branch.io - 移动深度链接平台
+DOMAIN-SUFFIX,branch.io
+
+############## 🤖 AI/科技类服务 ##############
+
+# Apple Private Relay（隐藏 IP）
 DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
-# Google Veo 2
+
+# Google Labs（含 Veo 2）
 DOMAIN-SUFFIX,labs.google
-# Temu
+
+############## 🛒 电商类平台 ##############
+
+# Temu - 电商平台
 DOMAIN-SUFFIX,temu.com
