@@ -1,8 +1,3 @@
-Here's the consolidated, de-duplicated, and optimized list, categorized for clarity:
-
-```
-############## 📱 金融服务类（银行/支付/投资）增强匹配 ##############
-
 # Robinhood - 股票交易平台
 DOMAIN-SUFFIX,robinhood.com
 DOMAIN-KEYWORD,robinhood
@@ -116,4 +111,3 @@ DOMAIN-KEYWORD,demdex
 DOMAIN-SUFFIX,adobedtm.com
 DOMAIN,assets.adobedtm.com
 DOMAIN-KEYWORD,adobedtm
-```
