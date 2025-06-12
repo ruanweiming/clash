@@ -1,24 +1,52 @@
 /*
- * Hupu Ad Remover
+ * Hupu Ad Remover (Combined)
  *
  * @author: ruanweiming
+ * @description: 移除虎扑 App 的开屏、社区 Banner、功能模块等。
  */
 
-// 1. 解析响应体
+const url = $request.url;
 let body = JSON.parse($response.body);
 
-// 2. 检查 'ads' 数组是否存在
-if (body.ads) {
-  // 3. 将广告数组清空
-  console.log("Hupu: 发现并清空 'ads' 数组。");
-  body.ads = [];
+// 规则一：处理开屏和社区 Banner 广告
+if (url.includes('/interfaceAd/')) {
+    console.log(`Hupu Ad Remover: 匹配到广告接口 (${url})`);
+    if (body && typeof body === 'object') {
+        let isModified = false;
+        if (body.ads && Array.isArray(body.ads)) {
+            body.ads = [];
+            isModified = true;
+        }
+        if (body.ad_code && body.ad_code !== 0) {
+            body.ad_code = 0;
+            isModified = true;
+        }
+        if (isModified) {
+            $done({ body: JSON.stringify(body) });
+        } else {
+            $done({});
+        }
+    } else {
+        $done({});
+    }
 }
 
-// 4. 修改广告状态码 (可选但推荐)
-if (body.ad_code) {
-  console.log("Hupu: 将 'ad_code' 从 " + body.ad_code + " 修改为 0。");
-  body.ad_code = 0;
+// 规则二：处理“我的”页面等的功能模块 (新)
+else if (url.includes('/gallery/getmod2')) {
+    console.log(`Hupu Ad Remover: 匹配到功能模块接口 (${url})`);
+    if (body && body.data) {
+        // 删除我们不想要的模块
+        delete body.data.mang_mod;
+        delete body.data.short_play_mod;
+        delete body.data.game_mod;
+        console.log("Hupu Ad Remover: 已移除 'mang_mod', 'short_play_mod', 'game_mod' 模块。");
+        $done({ body: JSON.stringify(body) });
+    } else {
+        $done({});
+    }
 }
 
-// 5. 返回修改后的响应体
-$done({ body: JSON.stringify(body) });
+// 如果没有匹配到任何规则，原样返回
+else {
+    $done({});
+}
