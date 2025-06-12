@@ -1,3 +1,6 @@
+Here's the consolidated, de-duplicated, and optimized list, categorized for clarity:
+
+```
 ############## 📱 金融服务类（银行/支付/投资）增强匹配 ##############
 
 # Robinhood - 股票交易平台
@@ -9,6 +12,7 @@ DOMAIN-SUFFIX,bankofamerica.com
 DOMAIN-SUFFIX,bac-assets.com
 DOMAIN-KEYWORD,bankofamerica
 DOMAIN-KEYWORD,bac
+DOMAIN,bankofamerica1.sc.omtrdc.net
 
 # Chase 银行
 DOMAIN-SUFFIX,chase.com
@@ -83,15 +87,33 @@ DOMAIN-SUFFIX,labs.google
 # Temu 电商平台
 DOMAIN-SUFFIX,temu.com
 
-############## 📊 性能追踪 / 分析工具 ##############
+############## 📊 性能追踪 / 分析与广告服务 ##############
 
 # Akamai mPulse 性能分析
 DOMAIN-SUFFIX,go-mpulse.net
 DOMAIN,c.go-mpulse.net
 DOMAIN-KEYWORD,mpulse
 
-# Adobe Omniture 分析平台
+# Adobe Analytics / Omniture 分析平台 (General)
 DOMAIN-SUFFIX,omtrdc.net
-DOMAIN,bankofamerica1.sc.omtrdc.net
-DOMAIN,discover.tt.omtrdc.net
 DOMAIN-KEYWORD,omtrdc
+
+# app-analytics-services.com - 可能第三方分析服务
+DOMAIN-SUFFIX,app-analytics-services.com
+DOMAIN-KEYWORD,analytics-services
+
+# Glassbox Digital - 用户行为分析
+DOMAIN-SUFFIX,glassboxdigital.io
+DOMAIN,report.dfs.glassboxdigital.io
+DOMAIN-KEYWORD,glassbox
+
+# Adobe Experience Cloud - 数据管理平台（DMP）
+DOMAIN-SUFFIX,demdex.net
+DOMAIN,dpm.demdex.net
+DOMAIN-KEYWORD,demdex
+
+# Adobe Tag Manager - 标签管理器
+DOMAIN-SUFFIX,adobedtm.com
+DOMAIN,assets.adobedtm.com
+DOMAIN-KEYWORD,adobedtm
+```
