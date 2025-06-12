@@ -1,0 +1,18 @@
+#!plugin
+
+[Plugin]
+name = 佣金宝去广告
+desc = 移除佣金宝 App 内的开屏、弹窗、Banner 等多种广告。首次使用前请确保已开启 MitM 并信任 Loon 证书。
+author = ruanweiming
+# 记得把这里换成你自己插件的 Raw URL
+plugin-url = https://raw.githubusercontent.com/ruanweiming/clash/main/yjb_ad_remover.plugin
+version = 1.1
+
+[MITM]
+# 添加新的域名
+hostname = comarket.yongjinbao.com.cn, webapps.yongjinbao.com.cn
+
+[Script]
+# 修改脚本规则，让它匹配两个 URL
+# 使用正则表达式的 | (或) 符号
+http-response ^https:\/\/(comarket|webapps)\.yongjinbao\.com\.cn\/(yjbapi\/advertisement|yjbwebservice\/core) requires-body=1, script-path=https://raw.githubusercontent.com/ruanweiming/clash/main/yjb_ad_remover.js, tag=佣金宝去广告
