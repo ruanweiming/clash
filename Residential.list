@@ -1,4 +1,4 @@
-############## 📱 金融服务类（银行/支付/投资）增强版 ##############
+############## 📱 金融服务类（银行/支付/投资）增强匹配 ##############
 
 # Robinhood - 股票交易平台
 DOMAIN-SUFFIX,robinhood.com
@@ -22,16 +22,19 @@ DOMAIN-SUFFIX,wf.com
 DOMAIN-KEYWORD,wellsfargo
 DOMAIN-KEYWORD,wf
 
-# Discover 银行和信用卡
+# Discover 银行与信用卡
 DOMAIN-SUFFIX,discover.com
 DOMAIN-SUFFIX,discovercard.com
 DOMAIN-KEYWORD,discover
+DOMAIN,mapi.discovercard.com
+DOMAIN,mapi.discoverbank.com
+DOMAIN,discover.tt.omtrdc.net
 
-# Venmo - 移动支付（PayPal 子公司）
+# Venmo - 支付平台
 DOMAIN-SUFFIX,venmo.com
 DOMAIN-KEYWORD,venmo
 
-# Intuit - TurboTax / QuickBooks
+# Intuit - 财税服务
 DOMAIN-SUFFIX,intuit.com
 DOMAIN-KEYWORD,intuit
 
@@ -40,29 +43,55 @@ DOMAIN-KEYWORD,intuit
 # Homebase - 员工排班管理
 DOMAIN-SUFFIX,joinhomebase.com
 
-############## 🔐 安全与监控 ##############
+############## 🔐 安全 / 风控 / 监控 ##############
 
-# Zimperium - 移动端威胁防护
+# Zimperium - 移动安全
 DOMAIN-SUFFIX,zimperium.com
 
-# AppDynamics - Cisco 旗下监控工具
+# AppDynamics - 性能监控
 DOMAIN-SUFFIX,eum-appdynamics
 
-############## 🔗 营销与链接服务 ##############
+# Iovation / Online-Metrix 风控系统
+DOMAIN-SUFFIX,online-metrix.net
+DOMAIN,aa.online-metrix.net
+DOMAIN,e.aa.online-metrix.net
+DOMAIN-KEYWORD,metrix
 
-# Branch.io - 移动深度链接平台
+# Datadog + NTP 监控服务
+DOMAIN-SUFFIX,datadog.pool.ntp.org
+DOMAIN,0.datadog.pool.ntp.org
+DOMAIN,d.1.datadog.pool.ntp.org
+DOMAIN-KEYWORD,datadog
+DOMAIN-SUFFIX,pool.ntp.org
+
+############## 🔗 营销 / 深度链接 ##############
+
+# Branch.io - 深度链接平台
 DOMAIN-SUFFIX,branch.io
 
-############## 🤖 AI/科技类服务 ##############
+############## 🤖 AI / 科技平台类 ##############
 
-# Apple Private Relay（隐藏 IP）
+# Apple Private Relay
 DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
 
-# Google Labs（含 Veo 2）
+# Google Labs（含 Veo）
 DOMAIN-SUFFIX,labs.google
 
 ############## 🛒 电商类平台 ##############
 
-# Temu - 电商平台
+# Temu 电商平台
 DOMAIN-SUFFIX,temu.com
+
+############## 📊 性能追踪 / 分析工具 ##############
+
+# Akamai mPulse 性能分析
+DOMAIN-SUFFIX,go-mpulse.net
+DOMAIN,c.go-mpulse.net
+DOMAIN-KEYWORD,mpulse
+
+# Adobe Omniture 分析平台
+DOMAIN-SUFFIX,omtrdc.net
+DOMAIN,bankofamerica1.sc.omtrdc.net
+DOMAIN,discover.tt.omtrdc.net
+DOMAIN-KEYWORD,omtrdc
