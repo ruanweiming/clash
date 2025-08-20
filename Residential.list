@@ -6,20 +6,12 @@ DOMAIN-KEYWORD,robinhood
 DOMAIN-SUFFIX,bankofamerica.com
 DOMAIN-SUFFIX,bac-assets.com
 DOMAIN-KEYWORD,bankofamerica
-DOMAIN-KEYWORD,bac
 DOMAIN,bankofamerica1.sc.omtrdc.net
 
 # Chase 银行
 DOMAIN-SUFFIX,chase.com
 DOMAIN-SUFFIX,chasecdn.com
 DOMAIN-KEYWORD,chase
-
-# Wells Fargo 银行
-DOMAIN-SUFFIX,wellsfargo.com
-DOMAIN-SUFFIX,wellsfargomedia.com
-DOMAIN-SUFFIX,wf.com
-DOMAIN-KEYWORD,wellsfargo
-DOMAIN-KEYWORD,wf
 
 # Discover 银行与信用卡
 DOMAIN-SUFFIX,discover.com
