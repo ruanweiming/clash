@@ -27,7 +27,6 @@ DOMAIN-KEYWORD,venmo
 
 # Intuit - 财税服务
 DOMAIN-SUFFIX,intuit.com
-DOMAIN-KEYWORD,intuit
 
 ############## 💼 工作 / 管理工具 ##############
 
@@ -46,19 +45,6 @@ DOMAIN-SUFFIX,eum-appdynamics
 DOMAIN-SUFFIX,online-metrix.net
 DOMAIN,aa.online-metrix.net
 DOMAIN,e.aa.online-metrix.net
-DOMAIN-KEYWORD,metrix
-
-# Datadog + NTP 监控服务
-DOMAIN-SUFFIX,datadog.pool.ntp.org
-DOMAIN,0.datadog.pool.ntp.org
-DOMAIN,d.1.datadog.pool.ntp.org
-DOMAIN-KEYWORD,datadog
-DOMAIN-SUFFIX,pool.ntp.org
-
-############## 🔗 营销 / 深度链接 ##############
-
-# Branch.io - 深度链接平台
-DOMAIN-SUFFIX,branch.io
 
 ############## 🤖 AI / 科技平台类 ##############
 
@@ -79,27 +65,21 @@ DOMAIN-SUFFIX,temu.com
 # Akamai mPulse 性能分析
 DOMAIN-SUFFIX,go-mpulse.net
 DOMAIN,c.go-mpulse.net
-DOMAIN-KEYWORD,mpulse
 
 # Adobe Analytics / Omniture 分析平台 (General)
 DOMAIN-SUFFIX,omtrdc.net
-DOMAIN-KEYWORD,omtrdc
 
 # app-analytics-services.com - 可能第三方分析服务
 DOMAIN-SUFFIX,app-analytics-services.com
-DOMAIN-KEYWORD,analytics-services
 
 # Glassbox Digital - 用户行为分析
 DOMAIN-SUFFIX,glassboxdigital.io
 DOMAIN,report.dfs.glassboxdigital.io
-DOMAIN-KEYWORD,glassbox
 
 # Adobe Experience Cloud - 数据管理平台（DMP）
 DOMAIN-SUFFIX,demdex.net
 DOMAIN,dpm.demdex.net
-DOMAIN-KEYWORD,demdex
 
 # Adobe Tag Manager - 标签管理器
 DOMAIN-SUFFIX,adobedtm.com
 DOMAIN,assets.adobedtm.com
-DOMAIN-KEYWORD,adobedtm
