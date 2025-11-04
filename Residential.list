@@ -51,6 +51,7 @@ DOMAIN,e.aa.online-metrix.net
 # Apple Private Relay
 DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
 
 # Google Labs（含 Veo）
 DOMAIN-SUFFIX,labs.google
