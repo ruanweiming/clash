@@ -57,6 +57,7 @@ DOMAIN-SUFFIX,guzzoni.apple.com,Proxy
 DOMAIN-SUFFIX,cp4.cloudflare.com,Proxy
 DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,Proxy
 DOMAIN-SUFFIX,apps.mzstatic.com,Proxy
+DOMAIN-SUFFIX,smoot.apple.com
 
 # Google Labs（含 Veo）
 DOMAIN-SUFFIX,labs.google
