@@ -74,6 +74,8 @@ DOMAIN,report.dfs.glassboxdigital.io
 DOMAIN-SUFFIX,demdex.net
 DOMAIN,dpm.demdex.net
 
+DOMAIN-SUFFIX, klaviyo.com
+
 # Adobe Tag Manager - 标签管理器
 DOMAIN-SUFFIX,adobedtm.com
 DOMAIN,assets.adobedtm.com
